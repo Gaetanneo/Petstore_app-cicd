@@ -19,5 +19,5 @@ WORKDIR /usr/src/myapp
 COPY . .
 # Include Maven Wrapper files
 COPY .mvn/ /usr/src/myapp/.mvn/
-RUN chmod +x ./mvnw && ./mvnw clean package
+RUN chmod +x ./mvnw
 CMD ./mvnw cargo:run -p tomcat90
